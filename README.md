@@ -1,4 +1,4 @@
-# kngm-blog
+# kngm-tech-note
 
 Static Site Generator:[Hugo](https://gohugo.io/)
 
@@ -8,8 +8,16 @@ Hosting Service:[GitHub Pages](https://docs.github.com/ja/pages)
 
 ## create new content
 
+zsh
+
 ```
-hugo new content posts/2023/09/17/index.md
+sh create_post.sh
+```
+
+or 
+
+```
+hugo new content posts/2024/09/15/index.md
 ```
 
 ## hugo server

@@ -1,8 +1,9 @@
 baseURL: "https://examplesite.com/"
-title: "kngm-blog"
+title: "kngm-tech-note"
 paginate: 5
-theme: PaperMod
+theme: [PaperMod]
 defaultContentLanguage: ja
+languageCode: ja
 hasCJKLanguage: true
 
 enableInlineShortcodes: true
@@ -11,6 +12,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+pygmentsCodeFences: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
 
 minify:
   disableXML: true
@@ -22,11 +26,11 @@ taxonomies:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "kngm-blog"
+  title: "kngm-tech-note"
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
   images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
+  DateFormat: "2006-01-02"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
@@ -47,7 +51,7 @@ params:
   tocopen: true
 
   label:
-    text: "kngm-blog"
+    text: "kngm-tech-note"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -65,15 +69,19 @@ params:
 
 menu:
   main:
-    - identifier: about
-      name: About
-      url: about/
-      weight: 10
     - identifier: posts
       name: Posts
       url: posts/
       weight: 10
+    - identifier: retrospectives
+      name: Retrospectives
+      url: retrospectives/
+      weight: 20
+    - identifier: about
+      name: About
+      url: about/
+      weight: 30
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 30
+      weight: 40
