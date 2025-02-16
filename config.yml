@@ -1,6 +1,5 @@
 baseURL: "https://examplesite.com/"
 title: "kngm-tech-note"
-paginate: 5
 theme: [PaperMod]
 defaultContentLanguage: ja
 languageCode: ja
@@ -15,6 +14,12 @@ enableEmoji: true
 pygmentsCodeFences: true
 pygmentsUseClasses: true
 mainsections: ["posts"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+      xHTML: true
 
 minify:
   disableXML: true

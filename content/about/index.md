@@ -15,6 +15,39 @@ Hugo Theme:[Hugo PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 
 Hosting Service:[GitHub Pages](https://docs.github.com/ja/pages)
 
+### 仕組み
+
+#### GitHub ActionsによるHugoのデプロイフロー
+
+[.github/workflows/hugo.yaml](https://github.com/kengoma/kngm-tech-note/blob/main/.github/workflows/hugo.yaml)の図解
+
+```mermaid
+graph TB
+    subgraph "トリガー"
+        A[mainブランチへのpush] --> START
+    end
+
+    subgraph "buildジョブ"
+        START[ワークフロー開始] --> C[Hugo CLIインストール]
+        C --> D[Dart Sassインストール]
+        D --> E[リポジトリのチェックアウト]
+        E --> F[GitHub Pages設定]
+        F --> G[Node.js依存関係インストール]
+        G --> H[Hugoビルド実行]
+        H --> I[成果物のアップロード]
+    end
+
+    subgraph "deployジョブ"
+        I --> J[GitHub Pagesへデプロイ]
+        J --> K[サイト公開完了]
+    end
+
+    style START fill:#f9f,stroke:#333
+    style K fill:#9f9,stroke:#333
+```
+
+[参考](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+
 ## 免責事項
 
 - 当サイトからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。
