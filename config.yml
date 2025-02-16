@@ -73,10 +73,6 @@ menu:
       name: Posts
       url: posts/
       weight: 10
-    - identifier: retrospectives
-      name: Retrospectives
-      url: retrospectives/
-      weight: 20
     - identifier: about
       name: About
       url: about/
