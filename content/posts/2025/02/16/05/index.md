@@ -42,7 +42,7 @@ docker inspect ubuntu
 - `-i`と`-t`をまとめて実行している
 - `-it`と組み合わせて使用するのが一般的
 
-#### `-i`
+#### `-i`オプション
 
 インタラクティブモード（interactive）を有効にするオプション
 - 標準入力（STDIN）をオープンに保つ
@@ -73,7 +73,7 @@ graph LR
     B -->|STDERR| D[エラー出力]
 ```
 
-#### `-t`
+#### `-t`オプション
 
 疑似ターミナル（pseudo-TTY）を割り当てる
 
@@ -113,7 +113,7 @@ graph TB
 - ターミナルは即座に制御を取り戻す
 
 ```sh
-# デタッチドモードでNginxを実行
+# デタッチドモードでnginxを実行
 docker run -p 80:80 -d nginx
 ```
 
@@ -124,7 +124,7 @@ docker run -p 80:80 -d nginx
 - Ctrl+Cで停止可能
 
 ```sh
-# フォアグラウンドモードでNginxを実行
+# フォアグラウンドモードでnginxを実行
 docker run nginx
 ```
 
