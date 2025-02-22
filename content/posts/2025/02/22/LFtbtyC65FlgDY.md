@@ -7,9 +7,10 @@ ShowToc: true
 TocOpen: true
 ---
 
-# ローカル環境でReactがとりあえず動く環境を作る(2025年2月版)
+## ローカル環境でReactがとりあえず動く環境を作る(2025年2月版)
 
 ## 動機
+
 Reactの学習用に、とりあえずVSCodeで書ける環境を作りたい。
 
 ESLintとPrettierは有効にしたい。
@@ -34,7 +35,7 @@ pnpm create vite
 
 ロゴファイルやCSSを削除
 
-```
+```bash
 rm src/assets/react.svg
 rm public/vite.svg
 rm src/App.css
@@ -152,5 +153,4 @@ pnpm dev
 
 Tailwind CSSを追加する方法
 
-[Get started with Tailwind CSS
-](https://tailwindcss.com/docs/installation/using-vite)
+[Get started with Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite)

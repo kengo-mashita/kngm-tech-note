@@ -13,8 +13,7 @@ Mermaidがレンダリングされるようにしてみる。
 
 ### hugo-PaperModのDiscussions
 
-[Mermaid doesn't work #850
-](https://github.com/adityatelange/hugo-PaperMod/discussions/850)
+[Mermaid doesn't work #850](https://github.com/adityatelange/hugo-PaperMod/discussions/850)
 
 ### 方法
 

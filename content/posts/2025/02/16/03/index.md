@@ -17,7 +17,7 @@ docker run hello-world
 
 このコンテナは正常に動作していることを確認するためのコンテナなので、メッセージを出力すると終了する
 
-```
+```bash
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 c9c5fd25a1bd: Download complete 
@@ -47,6 +47,7 @@ For more examples and ideas, visit:
 ```
 
 ## ライフサイクル
+
 主な一連のステップは下記の図になる
 
 ```mermaid
@@ -75,8 +76,10 @@ docker images
 ```
 
 #### コンテナ
+
 - `-a`オプションで起動していないコンテナも表示する
-```sh
+
+```bash
 docker ps -a
 ```
 
@@ -132,7 +135,7 @@ docker rm <container-id>
 docker rmi <image-name>
 ```
 
-### 図解 
+### 図解
 
 ```mermaid
 graph TB

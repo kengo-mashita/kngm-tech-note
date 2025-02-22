@@ -18,6 +18,7 @@ docker run --name <name> <image-name>
 ```
 
 使用例：
+
 ```sh
 # ubuntuコンテナに'my-ubuntu'という名前をつける
 docker run --name my-ubuntu ubuntu
@@ -44,7 +45,6 @@ docker rm my-ubuntu
 - 削除したコンテナの名前は再利用可能
 - コンテナ作成後に名前の変更はできない
 
-
 ## コンテナ停止時に自動的に削除する
 
 ### `--rm`オプション
@@ -54,6 +54,7 @@ docker run --rm <image-name>
 ```
 
 使用例：
+
 ```sh
 # コンテナ停止時に自動削除するUbuntuコンテナを実行
 docker run --rm hello-world
@@ -87,7 +88,7 @@ docker container prune --filter "until=24h"
 docker rm $(docker ps -aq -f status=exited)
 ```
 
-### 注意点
+### コンテナ削除の注意点
 
 - 削除したコンテナは復元できない
 - 実行中のコンテナは削除されない
