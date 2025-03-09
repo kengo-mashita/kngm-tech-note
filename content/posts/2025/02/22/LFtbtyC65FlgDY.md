@@ -1,13 +1,11 @@
 ---
 date: '2025-02-22T01:00:07+09:00'
 draft: false
-title: '2025-02-22T01:00:07+09:00'
+title: 'ローカル環境でReactがとりあえず動く環境を作る(2025年2月版)'
 tags: ['React', 'VSCode']
 ShowToc: true
 TocOpen: true
 ---
-
-## ローカル環境でReactがとりあえず動く環境を作る(2025年2月版)
 
 ## 動機
 

@@ -1,13 +1,11 @@
 ---
 date: '2025-03-09T17:41:00+09:00'
 draft: false
-title: '2025-03-09T17:41:00+09:00'
+title: '「理解に時間をかける」'
 tags: ['book', 'learn']
 ShowToc: true
 TocOpen: true
 ---
-
-## 「理解に時間をかける」
 
 [世界一流エンジニアの思考法](https://books.bunshun.jp/ud/book/num/1639176800000000000B):牛尾 剛 (著)
 
