@@ -1,6 +1,6 @@
 ---
 date: '2025-02-16T15:00:00+09:00'
-draft: false
+draft: true
 title: 'Hugo PaperModでMermaid記法を表示できるようにする'
 tags: ['hugo']
 ShowToc: true
