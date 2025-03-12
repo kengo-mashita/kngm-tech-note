@@ -10,8 +10,8 @@ Hosting Service:[GitHub Pages](https://docs.github.com/ja/pages)
 
 zsh
 
-```
-sh create_post.sh
+```bash
+create_post.sh
 ```
 
 or 
