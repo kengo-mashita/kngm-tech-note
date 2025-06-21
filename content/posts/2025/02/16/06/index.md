@@ -35,6 +35,14 @@ TocOpen: true
 {{ end }}
 ```
 
+#### Submoduleの場合
+
+1. `themes/PaperMod`ディレクトリ内で修正をコミットする ※`git push`は行わない
+
+2. `git add themes/PaperMod` -> `git commit -m "fix mermaid..."`でコミットする
+
+3. 親リポジトリ（Hugo）を`git push`する
+
 ### 結果
 
 ```mermaid
