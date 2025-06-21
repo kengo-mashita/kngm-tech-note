@@ -7,37 +7,31 @@ ShowToc: true
 TocOpen: true
 ---
 
-## 執筆時(2025/02/16)にはMermaidが表示できない
+## [2025/06/21更新]現在HugoにはMermaidを表示できる組み込みテンプレートが用意されていない
 
-Mermaidがレンダリングされるようにしてみる。
-
-### hugo-PaperModのDiscussions
-
-[Mermaid doesn't work #850](https://github.com/adityatelange/hugo-PaperMod/discussions/850)
+独自テンプレートを作成して、Mermaidがレンダリングされるようにしてみる。
 
 ### 方法
 
-下記2ファイルを作成する
+下記ファイルを作成する
 
-`layouts/_default/_markup/render-codeblock-mermaid.html`
+`layouts/_markup/render-codeblock-mermaid.html`
 
 ```html
 <pre class="mermaid">
-    {{- .Inner | htmlEscape | safeHTML }}
+  {{ .Inner | htmlEscape | safeHTML }}
 </pre>
 {{ .Page.Store.Set "hasMermaid" true }}
 ```
 
-`layouts/partials/extend_head.html`
+`themes/PaperMod/layouts/_default/baseof.html`の`</body>`の前に追加する
 
 ```html
 {{ if .Store.Get "hasMermaid" }}
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
-<script>
-  mermaid.initialize({ 
-    startOnLoad: true,
-  });
-</script>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
 {{ end }}
 ```
 
